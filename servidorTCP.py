@@ -1,7 +1,8 @@
+# coding: utf-8
 import socket
 
 # Terminal HOST: ifconfig
-# PORT aleatória acima de 1024
+# PORT aleatoria acima de 1024
 HOST = '150.165.42.166'
 PORT = 8012
 
