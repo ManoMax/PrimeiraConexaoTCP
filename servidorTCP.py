@@ -3,7 +3,7 @@ import socket
 
 # Terminal HOST: ifconfig
 # PORT aleatoria acima de 1024
-HOST = '150.165.42.166'
+HOST = 'localhost'
 PORT = 8012
 
 # Atribuindo uma Conexao TCP
@@ -20,6 +20,7 @@ while True:
 	# Estabelecendo "ID" de uma Conexao TCP/Cliente (con)
     con, cliente = tcp.accept()
 
+    print ('O servidor esta conectado por ' + cliente)
     # Recebendo mensagem do cliente, e retornando a mesma para ele
     while True:
         msg = con.recv(1024)
